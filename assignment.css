@@ -1,0 +1,596 @@
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+
+.navbar-shadow {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+    .hero-section {
+  width: 100%;
+  height: 1000px;
+  margin-top: 71px;
+  background-color: #fff;
+  position: relative;
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 920px;
+  height: auto;
+  padding-left: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.project-section {
+  width: 100%;
+  background-color: #EBEBFF;
+  padding: 142px 24px;
+  display: flex;
+  justify-content: center;
+  height: 2694px;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 142px;
+  width: 100%;
+  max-width: 920px;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #091E42;
+  margin-bottom: 12px;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 28px;
+  color: #344563;
+}
+
+
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: #6070FF;
+}   
+
+    .navbar-nav a {
+      font-size: 16px;
+      color: #344563;
+    }  
+    
+    .navbar-nav a:hover {
+      color: #6070FF;
+          
+
+    }
+
+
+    .navbar {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+
+    /* Mobile menu (offcanvas) */
+.offcanvas {
+  width: 100vw !important;
+  max-width: 100% !important;
+  height: 100vh !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: none;
+  border-radius: 0;
+}
+
+
+    .offcanvas a {
+      color: white;
+      font-size: 1.25rem;
+      text-decoration: none;
+      margin-bottom: 1rem;
+    }
+
+    /* Hero section styling
+    .hero-content {
+      width: 920px;
+      height: auto;
+      padding-left: 300px;
+      margin-top: 289px;
+    } */
+
+    .hero-title {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      letter-spacing: 0.37px;
+      color: #091E42;
+    }
+
+    .social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+  width: 170px;
+  height: 20px;
+}
+
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+    .hero-description {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #344563;
+      width: 920px;
+    }
+
+/* Shared ellipse style */
+
+
+.circle3 {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-69.41deg);
+  background-color: #EBEBFF;
+  opacity: 0.3;
+}
+
+.circle4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: 60px;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: rotate(-69.41deg);
+  border: 2px solid #fff;
+}
+
+
+.straight-line,
+.straight-line2,
+.straight-line3,
+.straight-line4 {
+  position: absolute;
+  width: 108.67px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(133.86deg);
+  opacity: 0.5;
+}
+
+.straight-line { top: 300px; left: 20px; }
+.straight-line2 { top: 350px; left: 50%; transform: translateX(-50%) rotate(133.86deg); }
+.straight-line3 { top: 400px; right: 20px; }
+.straight-line4 { top: 450px; left: 30%; }
+
+/* Rectangle 4 */
+.rect3 {
+  width: 161.41px;
+  height: 28.87px;
+  background-color: #EBEBFF;
+  top: 750px;
+  left: 731.44px;
+  transform: rotate(203.33deg);
+}
+
+
+.faq-section {
+  width: 100%;
+  padding: 80px 143px;
+  gap: 24px;
+  height: 600px;
+}
+
+/* Left Text Block */
+.faq-text-block {
+  width: 447px;
+  height: 311px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq-title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.faq-description {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Accordion Section */
+.faq-accordion-block {
+  /* width: 684px; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 684px;
+  height: 72px;
+  padding: 0 16px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+  padding: 12px;
+  width: 684px;
+  height: 216px;
+  background-color: #f9f9f9;
+}
+
+.faq-answer.active {
+  display: block;
+}
+
+
+.lang-icon-circle {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.lang-icon-circle img {
+  width: 32px;
+  height: 32px;
+}
+
+.lang-label {
+  width: 98px;
+  height: 24px;
+  margin-top: 12px;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+    .hero-extra-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  width: 200px;
+  height: 24px;
+  margin-top: 16px;
+}
+
+.projects-section {
+  background-color: #EBEBFF;
+  padding: 142px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ This centers the cards */
+  gap: 142px;
+}
+
+.project-card {
+  display: flex;
+  gap: 24px;
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 1152px; /* ✅ Keeps card width within section */
+  width: 100%;
+  box-sizing: border-box;
+    cursor: url('hand-cursor 1.png'), pointer;
+}
+
+.project-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-img {
+  width: 544px;
+  height: 448px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-text {
+  width: 544px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 16px;
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+}
+
+.project-meta .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #C1C7D0;
+  border-radius: 50%;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  height: 50px;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+.project-languages {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.lang-badge {
+  background-color: #EBEBFF;
+  color: #6070FF;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.project-button {
+  height: 153px;
+}
+
+.see-project2 {
+  margin-bottom: 100px;
+  width: 200px;
+  height: 48px;
+  border: 1px solid #6070FF;
+  background-color: white;
+  color: #6070FF;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 500;
+}
+
+.see-project {
+  width: 126px;
+  height: 48px;
+  border: 1px solid #6070FF;
+  background-color: white;
+  color: #6070FF;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 500;
+}
+
+.see-project:hover {
+  width: 126px;
+  height: 48px;
+  border: 1px solid #6070FF;
+  background-color: #6070FF;
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 500;
+}
+
+.sticky-top {
+  z-index: 1030 !important;
+}
+
+
+
+.curved-section {
+  position: relative;
+  width: 100%;
+  height: 924px;
+  background-color: white;
+  overflow: hidden;
+  padding: 60px;
+}
+
+/* Curve at top-right */
+.curved-section::before {
+  content: '';
+  position: absolute;
+  top: 200px; /* Adjust based on how deep you want the curve */
+  right: 200px;
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 0 100% 0 0;
+  transform: rotate(-180deg);
+  z-index: 1;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.footer-section {
+  width: 100%;
+  height: 846px;
+  padding-top: 100px; /* adjust if needed */
+  background-color: #6070FF; /* Optional background */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flow: vertical;
+  position: relative;
+}
+
+.footer-container {
+  width: 801px;
+  height: 577px;
+  top: 4421px;
+  left: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0;
+  max-width: 680px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.input-field {
+  width: 100%;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.message-field {
+  width: 100%;
+  height: 170px;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  resize: vertical;
+  color: #333;
+}
+
+.contact-button {
+  width: 142px;
+  height: 48px;
+  padding: 12px 16px;
+  background-color: #fff;
+  color: #6070FF;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color:rgb(216, 217, 226);
+}
+
+
+
+    /* RESPONSIVE BREAKPOINTS */
+
+    @include media-breakpoint-only(md, lg) 
+   {
+      .bar {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .navbar-collapse {
+        display: none !important;
+      }
+
+      .hero-content {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+        margin-top: 100px;
+      }
+
+      .hero-title {
+        font-size: 32px;
+        line-height: 42px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }

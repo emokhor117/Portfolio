@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1 " />
+  <title>Assignment</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assignment.css">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+<!-- HEADER -->
+<!-- Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- HEADER SECTION -->
+<header class="bg-white sticky-top shadow-sm" style="z-index: 1030;">
+  <nav class="navbar navbar-expand-md container py-2">
+    <!-- LOGO -->
+    <a class="navbar-brand fw-bold logo-text text-primary" href="#">My Logo</a>
+
+    <!-- MOBILE TOGGLE -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- DESKTOP MENU -->
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav gap-3 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#projects">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE MENU: OFFCANVAS -->
+<div class="offcanvas offcanvas-end text-bg-dark bg-primary" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title fw-semibold" id="mobileMenuLabel">Menu</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column gap-3 fs-5">
+    <a class="text-white nav-link" href="#projects" data-bs-dismiss="offcanvas">Portfolio</a>
+    <a class="text-white nav-link" href="#about" data-bs-dismiss="offcanvas">About</a>
+    <a class="text-white nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+  </div>
+</div>
+
+
+
+  <!-- HERO SECTION -->
+<section class="py-5 bg-white min-vh-100 d-flex align-items-center" id="hero">
+<!-- Decorative Circle Top Right -->
+<div class="position-absolute rounded-circle bg-primary opacity-50" 
+     style="width: 150px; height: 150px; top: 5%; right: 5%; z-index: 0; transform: rotate(-60deg);">
+</div>
+
+<!-- Decorative Ellipse Left -->
+<div class="position-absolute rounded-circle" 
+     style="width: 100px; height: 100px; background-color: #EBEBFF; top: 20%; left: 2%; z-index: 0; transform: rotate(140deg);">
+</div>
+
+<!-- Decorative Ellipse center-kinda -->
+<div class="position-absolute d-none d-md-block rounded-circle" 
+     style="width: 100px; height: 100px; background-color: #d4d4e9; top: 20%; left: 32%; z-index: 0; transform: rotate(140deg);">
+</div>
+
+<!-- Decorative Rectangle Bottom Right -->
+<div class="position-absolute d-none d-md-block bg-primary" 
+     style="width: 100px; height: 20px; border-radius: 4px; bottom: 10%; right: 10%; transform: rotate(150deg); z-index: 0;">
+</div>
+
+<!-- Decorative Rectangle Bottom Left -->
+<div class="position-absolute d-none d-md-block bg-primary opacity-50" 
+     style="width: 100px; height: 20px; border-radius: 4px; bottom: 10%; left: 10%; transform: rotate(150deg); z-index: 0;">
+</div>
+
+<!-- Small Circle Center Bottom -->
+<div class="position-absolute rounded-circle bg-primary" 
+     style="width: 20px; height: 20px; bottom: 5%; left: 50%; transform: translateX(-50%) rotate(-60deg); z-index: 0;">
+</div>
+
+  <div class="container" style="z-index: 1; position: relative;">
+    <div class="row justify-content-center ">
+      <div class="col-lg-8">
+
+        <!-- Hero Title -->
+        <h1 class="display-4 fw-bold mb-4">
+          I’m Daniel.<br />
+          Glad to see you!
+        </h1>
+
+        <!-- Hero Description -->
+        <p class="lead mb-4">
+          I’m a software developer! I can help you build a product, feature or website.
+          Look through some of my work and experience! If you like what you see and
+          have a project you need coded, don’t hesitate to contact me.
+        </p>
+
+        <!-- Hero Extra Text -->
+        <p class="text-uppercase fw-semibold small mb-2 text-primary">Let’s Connect</p>
+
+        <div class="d-flex gap-3 mt-3" style="width: 170px; height: 20px;">
+  <a href="#"><img src="twitter.png" alt="Twitter" style="width: 20px; height: 20px;"></a>
+  <a href="#"><img src="Linkedin icon.png" alt="LinkedIn" style="width: 20px; height: 20px;"></a>
+  <a href="#"><img src="medium.png" alt="Medium" style="width: 20px; height: 20px;"></a>
+  <a href="#"><img src="github.png" alt="GitHub" style="width: 20px; height: 20px;"></a>
+  <a href="#"><img src="angellist.png" alt="Angellist" style="width: 20px; height: 20px;"></a>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+    </div>
+</section>
+
+<section class="projects-section container-fluid px-3 px-md-5 bg-light" style="width: 100%;">
+
+  <div class="row align-items-center gy-4 my-2 bg-white col-md-12 col-12 rounded-3" style="width: 95%;" >
+    <div class="col-12 col-md-6 my-5">
+      <img src="efb81a270ee55d428834f9c9a8b1f9f45bd8d0c8.png" alt="Project 1" class="img-fluid rounded"/>
+    </div>
+    <div class="col-12 col-md-6 ">
+      <h2 class="project-title">Tonic</h2>
+      <div class="d-flex align-items-center flex-wrap gap-2 text-muted small mb-2">
+        <span class="text-dark">CANOPY</span><div class="dot bg-secondary rounded-circle " style="width:6px;height:6px;"></div>
+        <span>Back End Dev</span><div class="dot bg-secondary rounded-circle" style="width:6px;height:6px;"></div>
+        <span>2015</span>
+      </div>
+      <p class="project-description mb-5">
+        A daily selection of privately personalized reads; no accounts or sign-ups required.
+      </p>
+      <div class="project-languages mb-3">
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">html</span>
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">css</span>
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">javascript</span>
+      </div>
+      <button
+        class="btn btn-outline-primary mb-3"
+        data-bs-toggle="modal"
+        data-bs-target="#projectModal"
+        data-title="Tonic"
+        data-company="CANOPY"
+        data-role="Back End Dev"
+        data-year="2015"
+        data-description="A daily selection of privately personalized reads; no accounts or sign-ups required."
+        data-languages='["html", "css", "javascript"]'
+        data-img="efb81a270ee55d428834f9c9a8b1f9f45bd8d0c8.png"
+      >
+        See Project
+      </button>
+    </div>
+  </div>
+  </div>
+
+  <!-- Project Card 2 (reversed on large screen) -->
+  <div class="row align-items-center bg-white gy-4 flex-md-row-reverse mb-3 rounded-3" style="width: 95%;">
+    <div class="col-12 col-md-6 my-5">
+      <img src="7e29831a679f12c86bb033399c6b604b71698f3c.png" alt="Project 2" class="img-fluid rounded" />
+    </div>
+    <div class="col-12 col-md-6">
+      <h2 class="project-title">Multi-Post Stories</h2>
+      <div class="d-flex align-items-center flex-wrap gap-2 text-muted small mb-2">
+        <span class="text-dark">Facebook</span><div class="dot bg-secondary rounded-circle" style="width:6px;height:6px;"></div>
+        <span>Full Stack Dev</span><div class="dot bg-secondary rounded-circle" style="width:6px;height:6px;"></div>
+        <span>2015</span>
+      </div>
+      <p class="project-description mb-5">
+        Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
+      </p>
+      <div class="project-languages mb-3">
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">html</span>
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">Ruby on rails</span>
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">css</span>
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">javaScript</span>
+      </div>
+      <button
+        class="btn btn-outline-primary mb-3"
+        data-bs-toggle="modal"
+        data-bs-target="#projectModal"
+        data-title="Multi-Post Series"
+        data-company="FACEBOOK"
+        data-role="Full Stack Dev"
+        data-year="2015"
+        data-description="Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends."
+        data-languages='["html", "Ruby", "css", "javascript"]'
+        data-img="7e29831a679f12c86bb033399c6b604b71698f3c.png"
+      >
+        See Project
+      </button>
+    </div>
+  </div>
+
+   <div class="row align-items-center gy-4 my-2 bg-white col-md-12 col-12 rounded-3" style="width: 95%;" >
+    <div class="col-12 col-md-6 my-5">
+      <img src="664fe5cc0f7f4ed55bb0e54949043dfad6a0f507.png" alt="Project 1" class="img-fluid rounded"/>
+    </div>
+    <div class="col-12 col-md-6 ">
+      <h2 class="project-title">Facebook 360</h2>
+      <div class="d-flex align-items-center flex-wrap gap-2 text-muted small mb-2">
+        <span class="text-dark">FACEBOOK</span><div class="dot bg-secondary rounded-circle " style="width:6px;height:6px;"></div>
+        <span>Full Stack Dev</span><div class="dot bg-secondary rounded-circle" style="width:6px;height:6px;"></div>
+        <span>2015</span>
+      </div>
+      <p class="project-description mb-5">
+ Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+      </p>
+      <div class="project-languages mb-3">
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">html</span>
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">Ruby on rails</span>
+                <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">css</span>
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">javascript</span>
+      </div>
+      <button
+        class="btn btn-outline-primary mb-3"
+        data-bs-toggle="modal"
+        data-bs-target="#projectModal"
+        data-title="Facebook 360"
+        data-company="FACEBOOK"
+        data-role="Full Stack Dev"
+        data-year="2015"
+        data-description=" Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR."
+        data-languages='["html", "Ruby on rails","css ", "javascript"]'
+        data-img="664fe5cc0f7f4ed55bb0e54949043dfad6a0f507.png"
+      >
+        See Project
+      </button>
+    </div>
+  </div>
+  </div>
+
+<!-- project 4 -->
+ <div class="row align-items-center bg-white gy-4 flex-md-row-reverse mb-3 rounded-3" style="width: 95%;">
+    <div class="col-12 col-md-6 my-5">
+      <img src="c19d111790ae33a844e42a629adf3ce9dbbc315f.png" alt="Project 2" class="img-fluid rounded" />
+    </div>
+    <div class="col-12 col-md-6">
+      <h2 class="project-title">Uber Navigation</h2>
+      <div class="d-flex align-items-center flex-wrap gap-2 text-muted small mb-2">
+        <span class="text-dark">Uber</span><div class="dot bg-secondary rounded-circle" style="width:6px;height:6px;"></div>
+        <span>Lead Developer</span><div class="dot bg-secondary rounded-circle" style="width:6px;height:6px;"></div>
+        <span>2018</span>
+      </div>
+      <p class="project-description mb-5">
+A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
+      </p>
+      <div class="project-languages mb-3">
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">html</span>
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">Ruby on rails</span>
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">css</span>
+        <span class="badge me-1" style="background-color: #EBEBFF ; color: #6070FF; font-weight: 500;">javaScript</span>
+      </div>
+      <button
+        class="btn btn-outline-primary mb-3"
+        data-bs-toggle="modal"
+        data-bs-target="#projectModal"
+        data-title="Multi-Post Series"
+        data-company="Uber"
+        data-role="Lead Developer"
+        data-year="2018"
+        data-description="A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car."
+        data-languages='["html", "Ruby", "css", "javascript"]'
+        data-img="c19d111790ae33a844e42a629adf3ce9dbbc315f.png"
+      >
+        See Project
+      </button>
+    </div>
+  </div>
+
+
+</section>
+
+
+<!-- Full View Modal -->
+<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content px-3 py-4 px-md-5 py-md-5 rounded-3" style="max-width: 95vw; max-height: 95vh; overflow-y: auto;">
+
+      <!-- Top Container: Title & Meta -->
+      <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-4">
+        <div>
+          <h3 class="fw-bold" id="modal-title" style="font-size: 2rem;">Project Title</h3>
+          <div class="d-flex align-items-center flex-wrap gap-2" id="modal-meta">
+            <span>CANOPY</span>
+            <div style="width: 8px; height: 8px; background: #C1C7D0; border-radius: 50%;"></div>
+            <span>Back End Dev</span>
+            <div style="width: 8px; height: 8px; background: #C1C7D0; border-radius: 50%;"></div>
+            <span>2015</span>
+          </div>
+        </div>
+
+        <!-- Close Button -->
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Project Image -->
+      <div class="mb-4">
+        <img id="modal-img" src="data-img" alt="Project Image" class="img-fluid w-100 rounded-3" style="max-height: 400px; object-fit: cover;" />
+      </div>
+
+      <!-- Bottom Content -->
+      <div class="d-flex flex-column flex-lg-row justify-content-between gap-4">
+        
+        <!-- Description -->
+        <div class="flex-fill">
+          <p id="modal-description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it 1960s...
+          </p>
+        </div>
+
+        <!-- Tech Stack and Action Buttons -->
+        <div class="d-flex flex-column" style="min-width: 250px;">
+          
+          <!-- Languages -->
+          <div id="modal-languages" class="d-flex flex-wrap gap-2 mb-3">
+            <span class="px-3 py-1 rounded-3" style="background: #EBEBFF; color: #6070FF;">HTML</span>
+            <span class="px-3 py-1 rounded-3" style="background: #EBEBFF; color: #6070FF;">CSS</span>
+            <span class="px-3 py-1 rounded-3" style="background: #EBEBFF; color: #6070FF;">JavaScript</span>
+          </div>
+
+          <!-- Buttons -->
+          <a href="#" id="see-live-link" class="btn border text-primary d-flex align-items-center justify-content-center gap-2 mb-2"
+             style="border-color: #6070FF; border-radius: 8px; height: 48px;">
+            See Live
+            <img src="Icon - Export.png" alt="Live" width="24" height="24" />
+          </a>
+          <a href="#" id="see-source-link" class="btn border text-primary d-flex align-items-center justify-content-center gap-2"
+             style="border-color: #6070FF; border-radius: 8px; height: 48px;">
+            See Source
+            <img src="github.png" alt="Source" width="24" height="24" />
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<section class="faq-section container">
+  <div class="row">
+    
+    <!-- Left Text Block -->
+    <div class="col-lg-5 col-md-6 col-12 mb-4 faq-text-block">
+      <h2 class="faq-title">About Myself</h2>
+      <p class="faq-description">
+                  Hello I’m a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
+      </p>
+      <p class="hero-extra-text2 text-primary">LET’S CONNECT</p>
+
+      <div class="social-icons mb-3">
+        <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="Linkedin icon.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="medium.png" alt="Medium" /></a>
+        <a href="#"><img src="github.png" alt="GitHub" /></a>
+        <a href="#"><img src="angellist.png" alt="angellist" /></a>
+      </div>
+
+      <button class="btn btn-outline-primary w-10e">Get my resume</button>
+    </div>
+
+    <!-- Right Accordion Block -->
+    <div class="col-lg-7 col-md-6 col-12 faq-accordion-block">
+      <div class="faq-accordion-block">
+        <div class="faq-item mb-3">
+          <div class="faq-question d-flex justify-content-between align-items-center px-3 py-3 w-100 m-3" onclick="toggleFaq(this)">
+            <span class="fw-medium m-5">Languages</span>
+            <img src="Disabled.png" alt="Dropdown Arrow" class="faq-arrow" />
+          </div>
+          <div class="faq-answer bg-white">
+ <div class="language-cards row justify-content-center px-3 py-2">
+  <div class="col-12 col-lg-4 mb-3">
+    <div class="language-card d-flex flex-column align-items-center text-center">
+      <div class="lang-icon-circle">
+        <img src="javascript.png" alt="JavaScript" />
+      </div>
+      <div class="lang-label">JavaScript</div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-4 mb-3">
+    <div class="language-card d-flex flex-column align-items-center text-center">
+      <div class="lang-icon-circle">
+        <img src="css.png" alt="CSS" />
+      </div>
+      <div class="lang-label">CSS</div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-4 mb-3">
+    <div class="language-card d-flex flex-column align-items-center text-center">
+      <div class="lang-icon-circle">
+        <img src="html.png" alt="HTML" />
+      </div>
+      <div class="lang-label">HTML</div>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+ </script>
+ <script>    document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("projectModal");
+
+    // Get modal elements
+    const titleEl = document.getElementById("modal-title");
+    const metaEl = document.getElementById("modal-meta");
+    const imageEl = document.getElementById("modal-img");
+    const descEl = document.getElementById("modal-description");
+    const langEl = document.getElementById("modal-languages");
+    const liveLink = document.getElementById("see-live-link");
+    const sourceLink = document.getElementById("see-source-link");
+
+    document.querySelectorAll(".btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        // Extract data attributes
+        const title = button.getAttribute("data-title");
+        const company = button.getAttribute("data-company");
+        const role = button.getAttribute("data-role");
+        const year = button.getAttribute("data-year");
+        const desc = button.getAttribute("data-description");
+        const image = button.getAttribute("data-img");
+        const live = button.getAttribute("data-live");
+        const source = button.getAttribute("data-source");
+        const languages = JSON.parse(button.getAttribute("data-languages"));
+
+        // Inject data into modal
+        titleEl.textContent = title;
+        metaEl.innerHTML = `
+          <span>${company}</span>
+          <div style="width: 8px; height: 8px; background: #C1C7D0; border-radius: 50%;"></div>
+          <span>${role}</span>
+          <div style="width: 8px; height: 8px; background: #C1C7D0; border-radius: 50%;"></div>
+          <span>${year}</span>
+        `;
+        imageEl.src = image;
+        descEl.textContent = desc;
+        langEl.innerHTML = languages
+          .map(
+            (lang) =>
+              `<span class="px-3 py-1 rounded-3" style="background: #EBEBFF; color: #6070FF;">${lang}</span>`
+          )
+          .join("");
+        liveLink.href = live;
+        sourceLink.href = source;
+      });
+    });
+  });</script>
+
+  <script>
+  function toggleFaq(element) {
+    const answer = element.nextElementSibling;
+    const arrow = element.querySelector(".faq-arrow");
+
+    const isActive = answer.classList.contains("active");
+
+    // Close all open answers
+    document.querySelectorAll(".faq-answer").forEach((el) => el.classList.remove("active"));
+    document.querySelectorAll(".faq-arrow").forEach((el) => el.style.transform = "rotate(0deg)");
+
+    if (!isActive) {
+      answer.classList.add("active");
+      arrow.style.transform = "rotate(180deg)";
+    }
+  }
+</script>
+
+<footer class="footer-section position-relative bg-sky-50 justify-content-center py-5">
+  <!-- Decorative Elements -->
+  <div class="circle3 position-absolute"></div>
+  <div class="circle4 position-absolute"></div>
+  <div class="straight-line position-absolute"></div>
+  <div class="straight-line2 position-absolute"></div>
+  <div class="straight-line3 position-absolute"></div>
+  <div class="straight-line4 position-absolute"></div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8 text-center">
+        <h2 class="footer-title mb-3">Contact me</h2>
+        <p class="footer-description mb-4 mx-auto">
+          If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!
+        </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mx-auto">
+      <div class="col-12 col-lg-8 ">
+        <form class="contact-form row g-3">
+          <div class="col-md-6 mx-auto">
+            <input type="text" class="form-control input-field" placeholder="Your name" required>
+          </div>
+          <div class="col-md-6 mx-auto">
+            <input type="email" class="form-control input-field" placeholder="Your email" required>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 mx-auto">
+            <textarea class="form-control message-field " rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 text-center">
+            <button type="submit" class="btn btn-dark contact-button">Get in touch</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
