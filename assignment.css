@@ -4,10 +4,17 @@
       padding: 0;
     }
 
+html{
+  scroll-behavior: smooth;
+}
 
 .navbar-shadow {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
+}
+
+.lets-connect-link {
+  text-decoration: none;
 }
 
     .hero-section {
@@ -22,6 +29,15 @@
   align-items: center;
 }
 
+.blog-grid img {
+  transition: transform 0.3s ease;
+}
+
+.blog-grid img:hover {
+  transform: scale(1.03);
+}
+
+
 .hero-content {
   width: 100%;
   max-width: 920px;
@@ -33,6 +49,9 @@
   justify-content: center;
 }
 
+.carousel-img {
+  object-fit: cover;
+}
 
 .project-section {
   width: 100%;
@@ -42,6 +61,12 @@
   justify-content: center;
   height: 2694px;
 }
+
+.carousel-inner img {
+  height: 350px;
+  object-fit: cover;
+}
+
 
 .project-wrapper {
   display: flex;
@@ -109,13 +134,6 @@
       margin-bottom: 1rem;
     }
 
-    /* Hero section styling
-    .hero-content {
-      width: 920px;
-      height: auto;
-      padding-left: 300px;
-      margin-top: 289px;
-    } */
 
     .hero-title {
       font-weight: 700;
@@ -205,8 +223,7 @@
 
 .faq-section {
   width: 100%;
-  padding: 80px 143px;
-  gap: 24px;
+  padding: 80px;
   height: 600px;
 }
 
@@ -227,10 +244,7 @@
 }
 
 .faq-description {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+
 }
 
 /* Accordion Section */
@@ -502,6 +516,7 @@ body {
   margin: 0;
 }
 
+
 .footer-description {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -563,8 +578,21 @@ body {
 }
 
 
+/* Reduce carousel height on medium screens */
+@media (max-width: 991px) {
+  .carousel-img {
+    max-height: 260px;
+  }
+}
 
-    /* RESPONSIVE BREAKPOINTS */
+/* Further reduce on small screens */
+@media (max-width: 575px) {
+  .carousel-img {
+    max-height: 200px;
+  }
+}
+
+
 
     @include media-breakpoint-only(md, lg) 
    {
